@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     min-height: 100vh;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Common classes */
@@ -124,7 +127,7 @@ header form{
 
 .card img{
     width: 100%;
-    aspect-ratio: 1/1;
+    height: calc((70vw / 6) - 10px);;
 }
 
 .card p{
@@ -144,8 +147,99 @@ header form{
     background: none;
     width: 100%;
     height: 100%;
+    font-weight: bold;
 }
 
 #load button:hover{
     cursor: pointer;
+}
+
+/* footer */
+#badge{
+    padding: 40px 0;
+}
+
+#badge a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#badge img{
+    max-height: 50px;
+    max-width: 50px;
+}
+
+#badge span{
+    font-size: 16px;
+    word-break: keep-all;
+}
+
+footer{
+    height: 50vh;
+}
+
+#faq-bg{
+    height: 40vh;
+    background-image: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.faq > ul{
+    margin-bottom: 15px;
+}
+
+.faq h3{
+    margin-bottom: 7px;
+}
+
+.faq *{
+    color: white;
+}
+
+.faq a{
+    opacity: 0.6;
+}
+.faq a:hover{
+    opacity: 1;
+}
+
+#footer-logo{
+    width: 50%;
+}
+
+#footer-logo div{
+    background-image: url('../img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#sign-up{
+    height: 10vh;
+    background-color: #303030;
+}
+
+#sign-up > div{
+    height: 100%;
+}
+
+#sign-up button{
+    border: 2px solid #0282f9;
+    background: none;
+    padding: 15px 20px;
+}
+
+#sign-up button:hover{
+    cursor: pointer;
+}
+
+#sign-up a{
+    color:#0282f9;
+    text-decoration: none;
+    font-size: small;
+    vertical-align: middle;
 }
