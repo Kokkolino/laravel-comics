@@ -43,7 +43,7 @@
                 <a href="">SHOP</a>
             </li>
         </ul>
-        <form action="submit">
+        <form action="submit" class="flex">
             <input type="text" placeholder="search">
             <i class="fa-solid fa-magnifying-glass"></i>
         </form>
