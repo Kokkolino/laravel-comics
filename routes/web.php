@@ -18,7 +18,7 @@ Route::get('/', function () {
     $comics = config('comics');
 
     return view('home', compact('comics'));
-});
+})->name('home');
 
 Route::get('/{id}', function ($id) {   
 
@@ -30,6 +30,6 @@ Route::get('/{id}', function ($id) {
         abort(404);
     }
 
-    return view('comics.show');
+    return view('comics.show', compact('comic'));
 });
 

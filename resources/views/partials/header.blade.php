@@ -10,13 +10,15 @@
         </div>
     </section>
     <nav class="w-70 flex al-center jc-bw padding-h10">
-        <img src="{{asset('img/dc-logo.png')}}" alt="logo">
+        <a href="{{route('home')}}">
+            <img src="{{asset('img/dc-logo.png')}}" alt="logo">
+        </a>
         <ul class="flex" style="gap: 20px">
             <li>
                 <a href="">CHARACTERS</a>
             </li>
             <li>
-                <a href="">COMICS</a>
+                <a href="{{route('home')}}">COMICS</a>
             </li>
             <li>
                 <a href="">MOVIES</a>
@@ -48,4 +50,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </form>
     </nav>
+    {{-- jumbotron --}}
+    <section id="jumbo"></section>
+
 </header>

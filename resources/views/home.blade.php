@@ -3,8 +3,6 @@
 
 @section('main')
 <main>
-    {{-- jumbotron --}}
-    <section id="jumbo"></section>
     {{-- current series --}}
     <section id="series" >
         {{-- container --}}
